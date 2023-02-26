@@ -13,7 +13,7 @@ public class Aluno {
 	String nomeEscola;
 	String serieMatriculado;
 
-	//diferentes tipos de construtores para criação de objetos!!!
+	//diferentes tipos de construtores para criação de objetos!!
 	public Aluno() {
 
 	}
