@@ -17,22 +17,33 @@ public class Program {
 		String matricula = JOptionPane.showInputDialog("Matrícula: ");
 		String serie = JOptionPane.showInputDialog("Série");
 		String escola = JOptionPane.showInputDialog("Escola: ");
-		String nota1
+		String disciplina1 = JOptionPane.showInputDialog("Disciplina 1: ");
+		String nota1 = JOptionPane.showInputDialog("Nota 1: ");
+		String disciplina2 = JOptionPane.showInputDialog("Disciplina 2: ");
+		String nota2 = JOptionPane.showInputDialog("Nota 2: ");
+		String disciplina3 = JOptionPane.showInputDialog("Disciplina 3: ");
+		String nota3 = JOptionPane.showInputDialog("Nota 3: ");
+		String disciplina4 = JOptionPane.showInputDialog("Disciplina 4: ");
+		String nota4 = JOptionPane.showInputDialog("Nota 4: ");
 		
 		Aluno aluno1 = new Aluno();
 		aluno1.setNome(nome);
-		aluno1.setIdade(50);
-		aluno1.setDataNascimento("18/10/1977");
-		aluno1.setRegistroGeral("444.555.1-0");
-		aluno1.setNomeMae("Maria");
-		aluno1.setNomePai("João");
-		aluno1.setDataMatricula("01/01/1990");
-		aluno1.setSerieMatriculado("5º");
-		aluno1.setNomeEscola("JDEV Treinamentos");
-		aluno1.setNota1(90);
-		aluno1.setNota2(80.8);
-		aluno1.setNota3(70.9);
-		aluno1.setNota4(90.7);
+		aluno1.setIdade(Integer.parseInt(idade));
+		aluno1.setDataNascimento(nascimento);
+		aluno1.setRegistroGeral(rg);
+		aluno1.setNomeMae(mae);
+		aluno1.setNomePai(pai);
+		aluno1.setDataMatricula(matricula);
+		aluno1.setSerieMatriculado(serie);
+		aluno1.setNomeEscola(escola);
+		aluno1.setDisciplina1(disciplina1);
+		aluno1.setDisciplina2(disciplina2);
+		aluno1.setDisciplina3(disciplina3);
+		aluno1.setDisciplina4(disciplina4);
+		aluno1.setNota1(Double.parseDouble(nota1));
+		aluno1.setNota2(Double.parseDouble(nota2));
+		aluno1.setNota3(Double.parseDouble(nota3));
+		aluno1.setNota4(Double.parseDouble(nota4));
 		
 		System.out.println("Nome é: " + aluno1.getNome());
 		System.out.println("Idade é: " + aluno1.getIdade());
