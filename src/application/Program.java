@@ -12,10 +12,10 @@ public class Program {
 		String idade = JOptionPane.showInputDialog("Idade: ");
 		String nascimento = JOptionPane.showInputDialog("Data de nascimento:");
 		String rg = JOptionPane.showInputDialog("Registro Geral: ");
-		String mae = JOptionPane.showInputDialog("Nome da m„e: ");
+		String mae = JOptionPane.showInputDialog("Nome da m√£e: ");
 		String pai = JOptionPane.showInputDialog("Nome do pai: ");
-		String matricula = JOptionPane.showInputDialog("MatrÌcula: ");
-		String serie = JOptionPane.showInputDialog("SÈrie");
+		String matricula = JOptionPane.showInputDialog("Matr√≠cula: ");
+		String serie = JOptionPane.showInputDialog("S√©rie");
 		String escola = JOptionPane.showInputDialog("Escola: ");
 		String disciplina1 = JOptionPane.showInputDialog("Disciplina 1: ");
 		String nota1 = JOptionPane.showInputDialog("Nota 1: ");
@@ -45,11 +45,10 @@ public class Program {
 		aluno1.setNota3(Double.parseDouble(nota3));
 		aluno1.setNota4(Double.parseDouble(nota4));
 		
-		System.out.println("Nome È: " + aluno1.getNome());
-		System.out.println("Idade È: " + aluno1.getIdade());
+		System.out.println("Nome √©: " + aluno1.getNome());
+		System.out.println("Idade √©: " + aluno1.getIdade());
 		System.out.println("Nascimento: " + aluno1.getDataNascimento());
-		System.out.printf("MÈdia da nota È: %.2f%n", aluno1.getMediaNota());
-		System.out.println("Resultado = " + aluno1.getAlunoAprovado());
+		System.out.printf("M√©dia da nota √©: %.2f%n", aluno1.getMediaNota());
 		
 		Aluno aluno2 = new Aluno();
 		aluno2.setNome("Alex Santos");
