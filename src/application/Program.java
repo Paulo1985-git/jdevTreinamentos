@@ -7,7 +7,7 @@ import entities.Aluno;
 public class Program {
 
 	public static void main(String[] args) {
-		
+
 		String nome = JOptionPane.showInputDialog("Qual o nome do Aluno? ");
 		String idade = JOptionPane.showInputDialog("Idade: ");
 		String nascimento = JOptionPane.showInputDialog("Data de nascimento:");
@@ -25,7 +25,7 @@ public class Program {
 		String nota3 = JOptionPane.showInputDialog("Nota 3: ");
 		String disciplina4 = JOptionPane.showInputDialog("Disciplina 4: ");
 		String nota4 = JOptionPane.showInputDialog("Nota 4: ");
-		
+
 		Aluno aluno1 = new Aluno();
 		aluno1.setNome(nome);
 		aluno1.setIdade(Integer.parseInt(idade));
@@ -44,17 +44,11 @@ public class Program {
 		aluno1.setNota2(Double.parseDouble(nota2));
 		aluno1.setNota3(Double.parseDouble(nota3));
 		aluno1.setNota4(Double.parseDouble(nota4));
-		
+
 		System.out.println("Nome é: " + aluno1.getNome());
 		System.out.println("Idade é: " + aluno1.getIdade());
 		System.out.println("Nascimento: " + aluno1.getDataNascimento());
 		System.out.printf("Média da nota é: %.2f%n", aluno1.getMediaNota());
-		
-		Aluno aluno2 = new Aluno();
-		aluno2.setNome("Alex Santos");
 
-		Aluno aluno3 = new Aluno();
-		aluno3.setNome("Tiago Silva");
 	}
-
 }
